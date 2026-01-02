@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Simple Calculator</title>
+  <link rel="stylesheet" href="assets/styles/app.css">
+</head>
+<body>
+  <main class="calculator-app">
+    <section class="calculator">
+      <header class="calc-header">
+        <h1>Calculator</h1>
+        <button id="toggle-history" class="btn">History</button>
+      </header>
+
+      <div class="display" id="display">0</div>
+
+      <div class="keys">
+        <button class="btn" data-action="clear">C</button>
+        <button class="btn" data-value=".">.</button>
+        <button class="btn" data-action="delete">⌫</button>
+        <button class="btn" data-value="+">+</button>
+
+        <button class="btn" data-value="1">1</button>
+        <button class="btn" data-value="2">2</button>
+        <button class="btn" data-value="3">3</button>
+        <button class="btn" data-value="-">−</button>
+
+        <button class="btn" data-value="4">4</button>
+        <button class="btn" data-value="5">5</button>
+        <button class="btn" data-value="6">6</button>
+        <button class="btn" data-value="*">×</button>
+
+        <button class="btn" data-value="7">7</button>
+        <button class="btn" data-value="8">8</button>
+        <button class="btn" data-value="9">9</button>
+        <button class="btn" data-value="/">÷</button>
+
+        <button class="btn placeholder" disabled></button>
+        <button class="btn" data-value="0">0</button>
+        <button class="btn placeholder" disabled></button>
+        <button class="btn" data-action="equals">=</button>
+      </div>
+    </section>
+
+    <aside class="history" id="history">
+      <header>
+        <h2>History</h2>
+        <div class="history-controls">
+          <button id="clear-history" class="btn small">Clear</button>
+          <button id="close-history" class="btn small">Close</button>
+        </div>
+      </header>
+      <ul id="history-list"></ul>
+    </aside>
+  </main>
+
+  <script src="assets/scripts/app.js"></script>
+</body>
+</html>
+
